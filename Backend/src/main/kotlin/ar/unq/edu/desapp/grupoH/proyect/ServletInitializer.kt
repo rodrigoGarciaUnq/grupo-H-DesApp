@@ -1,4 +1,4 @@
-package unq.edu.ar.desarollo
+package ar.unq.edu.desapp.grupoH.proyect
 
 import org.springframework.boot.builder.SpringApplicationBuilder
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
@@ -6,7 +6,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 class ServletInitializer : SpringBootServletInitializer() {
 
 	override fun configure(application: SpringApplicationBuilder): SpringApplicationBuilder {
-		return application.sources(DesarolloApplication::class.java)
+		return application.sources(ProyectApplication::class.java)
 	}
 
 }
