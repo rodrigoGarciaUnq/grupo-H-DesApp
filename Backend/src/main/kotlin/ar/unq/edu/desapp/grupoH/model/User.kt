@@ -9,8 +9,8 @@ class User(var registerMethod: ManualRegister) {
     //TODO (registerMethod deberia ser de la clase abstracta)
 
     var pointList: MutableList<Point> = emptyList<Point>().toMutableList()
-    var username: String = this.registerMethod.username!!
-    var nick: String = this.registerMethod.nick!!
+    var username: String = this.registerMethod.username
+    var nick: String = this.registerMethod.nick
 
     fun makeDonation(paymentMethod: PaymentMethod, amount: Int, to: Town, comment: String){
         var projectTo : CrowdfundingProject = ProjectSearcher.findProject(to)
