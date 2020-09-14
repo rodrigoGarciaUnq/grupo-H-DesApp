@@ -1,6 +1,9 @@
 language: java
+dist: trusty
 sudo: required
 jdk:
   - oraclejdk8
+before_install:
+   - cd Backend && chmod +x gradlew
 install:
-  -cd grupo-H-022020-DesApp/Backend && ./gradlew clean build 
+   - ./gradlew clean build 
