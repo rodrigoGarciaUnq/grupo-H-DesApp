@@ -1,0 +1,6 @@
+language: java
+sudo: required
+jdk:
+  - oraclejdk8
+install:
+  -cd grupo-H-022020-DesApp/Backend && ./gradlew clean build 
