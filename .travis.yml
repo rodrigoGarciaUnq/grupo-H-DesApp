@@ -1,0 +1,8 @@
+language: java
+dist: trusty
+jdk:
+  - oraclejdk8
+before_install:
+  - cd Backend && chmod +x gradlew
+install:
+  - ./gradlew clean build
